@@ -17,3 +17,5 @@
 @import './components/step.css';
 @import './components/table.css';
 @import './components/timeline.css';
+
+@import './custom-components/table.css';

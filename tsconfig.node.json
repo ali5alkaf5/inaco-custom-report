@@ -4,6 +4,11 @@
   "compilerOptions": {
     "composite": true,
     "module": "ESNext",
-    "types": ["node"]
+    "baseUrl": "./src",
+    "types": ["node"],
+    "paths": {
+      "@/*": ["*"]
+    },
+    "verbatimModuleSyntax": false,
   }
 }

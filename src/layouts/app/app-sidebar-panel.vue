@@ -53,7 +53,7 @@ useSidebar()
                 v-else
                 class="menu-link-button"
                 @click="sidebarMenuStore.toggleMenu(menu.name)"
-                :class="{ 'font-extrabold': sidebarMenuStore.$state.activeMenuName === menu.name }"
+                :class="{ 'font-bold': sidebarMenuStore.$state.activeMenuName === menu.name }"
               >
                 <p>{{ menu.name }}</p>
                 <i
@@ -151,7 +151,7 @@ useSidebar()
 }
 
 .menu-link-button.router-link-active {
-  @apply font-extrabold;
+  @apply font-bold;
 }
 
 .menu-link-button.router-link-active > i {
@@ -163,7 +163,7 @@ useSidebar()
 }
 
 .submenu-link.router-link-active p {
-  @apply font-extrabold;
+  @apply font-bold;
 }
 
 .submenu {

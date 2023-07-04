@@ -18,4 +18,17 @@ const router = createRouter({
   routes: routes
 })
 
+router.beforeEach((to, from, next) => {
+  if(to.path.startsWith('/api')){
+    window.location.href = (to.path.replace('/api/v1', '') + '.json');
+    return;
+  }
+  if(!localStorage.getItem('auth-token') && !['/login', '/register'].includes(to.path)){
+    next({
+      path: '/login'
+    })
+  }
+  next();
+});
+
 export default router

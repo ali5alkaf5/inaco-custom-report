@@ -4,7 +4,12 @@
   "compilerOptions": {
     "composite": true,
     "lib": [],
+    "baseUrl": "./src",
     "types": ["node", "jsdom"],
-    "ignoreDeprecations": "5.0"
+    "ignoreDeprecations": "5.0",
+    "paths": {
+      "@/*": ["*"]
+    },
+    "verbatimModuleSyntax": false,
   }
 }

@@ -3,6 +3,7 @@ interface Props {
   modelValue: string
   id?: string
   label?: string
+  name?: string
   description?: string
   placeholder?: string
   type?: 'text' | 'tel' | 'email' | 'password' | 'date' | 'number'
@@ -95,6 +96,7 @@ onMounted(() => {
             paddingLeft: `${paddingLeft}px`,
             paddingRight: `${paddingRight}px`
           }"
+          :name="props.name"
         />
         <div
           ref="suffixRef"

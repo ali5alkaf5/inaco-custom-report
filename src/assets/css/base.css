@@ -3,7 +3,7 @@
 }
 
 html.dark {
-  @apply [color-scheme:dark];
+  @apply [color-scheme:light];
 }
 
 body {

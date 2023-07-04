@@ -9,6 +9,7 @@ export interface Props {
   placeholder?: string
   border?: 'full' | 'simple' | 'none'
   list: OptionsInterface[]
+  name?: string
 }
 </script>
 
@@ -38,7 +39,7 @@ const selected = computed({
 </script>
 
 <template>
-  <Listbox v-model="selected">
+  <Listbox v-model="selected" :name="props.name">
     <div class="list-box">
       <ListboxButton
         class="list-box-button"

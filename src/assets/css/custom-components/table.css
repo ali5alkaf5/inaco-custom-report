@@ -1,0 +1,31 @@
+.btn-icon {
+    @apply relative rounded-full p-2 hover:bg-slate-300/20 dark:hover:bg-slate-300/20;
+}
+
+.btn-icon i {
+    @apply h-24px w-24px flex items-center justify-center;
+}
+
+.page-button {
+    @apply inline-flex cursor-pointer items-center justify-center px-4 py-2 
+    text-center tracking-wide outline-none transition-all duration-200
+    focus:outline-none
+    hover:opacity-90;
+}
+
+.page-number {
+    @apply inline-flex cursor-pointer items-center justify-center rounded-lg px-4 py-2 
+    text-center tracking-wide outline-none transition-all duration-200
+    focus:outline-none
+    hover:opacity-90;
+}
+.page-number:not(.active){
+    @apply bg-white dark:bg-slate-800 rounded-none;
+}
+.page-number.active {
+    @apply rounded border-primary bg-primary text-white;
+}
+
+button[class$="-page-button"] i {
+    @apply hover:opacity-80 dark:text-white text-white h-12px w-12px flex items-center justify-center;
+}

@@ -5,6 +5,7 @@ interface Props {
   label?: string
   description?: string
   placeholder?: string
+  name?: string
   type?: 'text' | 'tel' | 'email' | 'password' | 'date' | 'number'
   border?: 'simple' | 'full' | 'none'
   layout?: 'vertical' | 'horizontal'
@@ -78,6 +79,7 @@ const value = computed({
         :required="props.required"
         :readonly="props.readonly"
         :disabled="props.disabled"
+        :name="props.name"
       />
       <slot name="helper" v-if="helper">
         <span class="text-sm font-light text-slate-500">{{ helper }}</span>

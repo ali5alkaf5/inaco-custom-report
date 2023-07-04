@@ -18,6 +18,13 @@ import BaseSwitchVue from './base-switch.vue'
 import BaseTextareaVue from './base-textarea.vue'
 import BaseTreeviewVue from './base-treeview.vue'
 
+// Created Components
+import BaseSelectMaskVue from './base-select-mask.vue'
+import VTableFiltersVue from './v-table-filters.vue'
+import VDatatableVue from './v-datatable.vue'
+import BreadcrumbsVue from './breadcrumbs.vue'
+import VTableVue from './v-table.vue'
+
 export const BaseAccordion = BaseAccordionVue
 export const BaseAccordionItem = BaseAccordionItemVue
 export const BaseAutocomplete = BaseAutocompleteVue
@@ -37,3 +44,10 @@ export const BaseSelect = BaseSelectVue
 export const BaseSwitch = BaseSwitchVue
 export const BaseTextarea = BaseTextareaVue
 export const BaseTreeview = BaseTreeviewVue
+
+// Custom Components
+export const Breadcrumbs = BreadcrumbsVue
+export const BaseSelectMask = BaseSelectMaskVue
+export const VTable = VTableVue
+export const VTableFilters = VTableFiltersVue
+export const VDatatable = VDatatableVue

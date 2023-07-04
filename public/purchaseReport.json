@@ -1,0 +1,5 @@
+[
+    { "id": 1, "dateInvoice": "2023-01-01", "supplier": "supplier" },
+    { "id": 2, "dateInvoice": "2022-01-01", "supplier": "supplier" },
+    { "id": 3, "dateInvoice": "2022-06-01", "supplier": "PT ABC" }
+]

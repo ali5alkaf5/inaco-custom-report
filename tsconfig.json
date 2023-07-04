@@ -10,5 +10,14 @@
     {
       "path": "./tsconfig.vitest.json"
     }
-  ]
+  ],
+  "compilerOptions": {
+    "baseUrl": "./src",
+    "preserveValueImports": false,
+    "isolatedModules": false,
+    "paths": {
+      "@/*": ["*"]
+    },
+    "verbatimModuleSyntax": false,
+  }
 }

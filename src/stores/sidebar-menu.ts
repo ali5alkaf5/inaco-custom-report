@@ -107,24 +107,51 @@ const menuMain = {
       path: '/dashboard'
     },
     {
-      name: 'Page 1',
-      path: '/page-1'
-    },
-    {
-      name: 'Page 2',
-      path: '/page-2'
-    },
-    {
-      name: 'Nested',
+      name: 'Purchase',
       submenu: [
         {
-          name: 'Page Nested 1',
-          path: '/nested/page-nested-1'
+          name: 'Purchase Report',
+          path: '/purchase/purchase-report'
         },
         {
-          name: 'Page Nested 2',
-          path: '/nested/page-nested-2'
+          name: 'Purchase Report Details',
+          path: '/purchase/purchase-report-details'
         }
+      ]
+    },
+    {
+      name: 'Sales',
+      submenu: [
+        {
+          name: 'Sales Report',
+          path: '/sales/sales-report'
+        },
+        {
+          name: 'Sales Customer Report',
+          path: '/sales/sales-report-customer'
+        }
+      ]
+    },
+    {
+      name: 'Financing',
+      submenu: [
+        {
+          name: 'Debts Aging Report',
+          path: '/finance/debts-aging-report'
+        },
+        {
+          name: 'Debts Aging Report per Customer',
+          path: '/finance/debts-aging-customer-report'
+        }
+      ]
+    },
+    {
+      name: 'Inventory',
+      submenu: [
+        {
+          name: 'Inventory Report',
+          path: '/inventory/inventory-report'
+        },
       ]
     }
   ]

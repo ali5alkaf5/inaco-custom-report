@@ -1,5 +1,6 @@
 <script setup lang="ts">
-import { RouterView } from 'vue-router'
+import { RouterView, useRoute } from 'vue-router'
+import { Breadcrumbs } from '@/components';
 import AppPreloader from '@/components/app-preloader.vue'
 import AppHeader from './app-header.vue'
 import AppSidebar from './app-sidebar.vue'
@@ -18,7 +19,9 @@ import AppFooter from './app-footer.vue'
     <app-sidebar class="print:hidden"></app-sidebar>
     <!-- Main Content -->
     <div class="main-container">
+      <!-- Breadcrumbs -->
       <main class="main-content">
+        <Breadcrumbs/>
         <router-view />
       </main>
       <app-footer class="pt-4"></app-footer>

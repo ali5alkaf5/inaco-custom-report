@@ -3,7 +3,7 @@ import { useDarkMode } from '@/composable/dark-mode'
 import { useScreenSize } from '@/composable/screen-size'
 import { BaseNotification } from '@/components/index'
 
-useDarkMode()
+// useDarkMode()
 useScreenSize()
 </script>
 
